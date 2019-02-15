@@ -1,0 +1,4 @@
+Zdecydowa³em siê napisaæ zadanie przy u¿yciu frameworka React poniwa¿ s³ysza³em, ze na nim pracujecie.
+
+Oprócz Reacta, doda³em ob³sugê jQuery, zadanie bazodanowe realizuje plik PHP.
+

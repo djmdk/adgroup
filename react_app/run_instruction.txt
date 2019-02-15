@@ -1,0 +1,30 @@
+1) Pobraæ NPM i zainstalowaæ:
+2) Pobraæ create-react-app: npm i -g create-react-app
+3) Utworzyæ projekt: create-react-app react_app
+4) Przegraæ pliki z repozytorium: https://github.com/djmdk/adgroup.git
+
+uruchamiamy: 
+
+node js
+w konsoli wlaczamy serwer
+npm start
+
+cd react_app
+npm start
+
+instalujemy dodatki:
+
+npm install --save-dev react-router
+npm install --save react-router-dom
+npm install react-router@3 --save
+npm install jquery --save
+
+wchodzimy na adres i gotowe: http://localhost:3000/react_app/
+
+
+jesli chcemy by dane zapisywaly sie do bazy mysql nalezy utworzyc:
+
+
+tabele "table" z polem tekstowym "content" w bazie "database"
+dla uzytkownika "root" bez hasla.
+
