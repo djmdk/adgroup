@@ -1,6 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import { Link, Router, Route, IndexRoute, hashHistory } from "react-router";
 import $ from "jquery";
+import { Form, Button, Badge } from 'react-bootstrap';
 
 var element_text_edit = false;
 var element_text_html = 'Edit Me';
@@ -17,7 +20,7 @@ export default class PageHome extends React.Component
 			element_text_html: 'Edit Me'
 		};
 	}
-	
+
 	buttonClick()
 	{	
 		if(element_text_edit == true)
@@ -61,11 +64,24 @@ export default class PageHome extends React.Component
 	render() 
 	{
 		return (
-			<div>
-				<h1>WELCOME</h1>
-				<div id="container">
-					<span id="containerEditor" className="forText"></span>
-					<span id="containerButton" className="forButton"><button id="Button" onClick={this.buttonClick}>Edit Me</button></span>
+			<div class="row">
+				<div class="jumbotron">
+					<div class="container">
+						<br />
+						<h1><i>Exercise #1</i></h1>
+						<p>"<i>When clicking on a text element, the user must be able to edit it. The appearance of the page before clicking on the text, and after saving it, should be identical to what the pagelooks like originally.</i>"</p>
+					</div>
+				</div>
+				<div class="container">
+					<h2 class="form-signin-heading">Strona główna</h2>
+					<div id="container_content" class="col-md-16">	
+						<p>When clicking on a text element, the user must be able to edit it. The appearance of the page before clicking on the text, and after saving it, should be identical to what the pagelooks like originally. Backend is your choice - framework or custom - use whatever framework you like, or none, as long as it's PHP. It must supply a clear RESTful JSON API for the front end app.</p>
+						<span id="containerEditor" className="forText"></span>
+						<span id="containerButton" className="forButton">
+							<Button id="Button" variant="primary" type="submit" onClick={this.buttonClick}>Edit Me</Button>
+						</span><br />
+						<br />
+					</div>
 				</div>
 			</div>
 		);

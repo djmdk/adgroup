@@ -1,44 +1,30 @@
 import React from "react";
 import { Link } from "react-router";
-import "./PageLayout.css";
+
 
 export default class PageLayout extends React.Component 
 {
 	render() 
 	{
 		return (
-			<div className="App-body">
-				<Link to="/" activeClassName="App-link">Home Page</Link>
-				<Link to="/login" activeClassName="App-link">Login</Link> 
-				{this.props.children}
-				<br />
-				<div id="containerAjax">
-					No AJAX request..
-				</div>
-				<br />
-				<div>
-					<strong>Komendy NPM i użyte rozszerzenia:</strong><br />
+			<div class="jumbotron">
+				<div class="container">
 					<br />
-					npm start<br />
-					npm install -g npm<br />
-					npm i -g create-react-app<br />
-					npm create-react-app react-app<br />
-					cd react_app<br />
-					npm start<br />
-					<br />
-					npm install --save-dev react-router<br />
-					npm install --save react-router-dom<br />
-					npm install react-router@3 --save<br />
-					npm install jquery --save<br />
+					<h1><i>Exercise #1</i></h1>
+					<p>"<i>This exercise is designed to show us how you work and your code practices, which will show us how you think about things as well as giving us an example of your code, and will give you a chance to see how it is to work with us.</i>"</p>
+					<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
 				</div>
-				<br />
-				<div>
-					<strong>Kontakt:</strong><br />
-					<br />
-					Paweł Drabowicz<br />
-					Telefon: 664-067-982<br />
-					Email: djmdk@wp.pl<br />
+			</div>
+			<div class="container">
+				<div class="row">
+					<div  id="container_content" class="col-md-16">
+						
+					</div>
 				</div>
+				<hr />
+				<footer>
+					<p>&copy; 2016 Company, Inc.</p>
+				</footer>
 			</div>
 		);
 	}

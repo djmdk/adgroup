@@ -1,25 +1,46 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import { Router, Route, IndexRoute, hashHistory } from "react-router";
-import * as serviceWorker from "./serviceWorker";
-import "./index.css";
+import { Link, Router, Route, IndexRoute, hashHistory, browserHistory } from "react-router";
 
-import PageLayout from "./PageLayout";
+//import * as serviceWorker from "./serviceWorker";
+//import "./index.css";\
+//import "bootstrap/dist/css/bootstrap.min.css";
+
+import PageHeader from "./PageHeader";
 import PageHome from "./PageHome";
 import PageLogin from "./PageLogin";
+import PageFooter from "./PageFooter";
 
 const app = document.getElementById('root');
 
+
 ReactDOM.render
 (
-	<Router history={hashHistory}>
-		<Route path="/" component={PageLayout}>
-			<IndexRoute component={PageHome}></IndexRoute>
-			<Route path="/login" component={PageLogin}></Route>
-		</Route>
-	</Router>,
+	<span>
+		<PageHeader />
+		<Router history={browserHistory}>
+			<Route path="/">
+				<IndexRoute			component={PageHome}></IndexRoute>
+				<Route path="login"	component={PageLogin}></Route>
+			</Route>
+		</Router>
+		<PageFooter />
+	</span>,
 	app
 );
 
-serviceWorker.unregister();
+
+/*
+ReactDOM.run
+(
+	routes, function(Handler, state)
+	{
+		var params = state.params;
+		
+		React.render(<Handler params={params}/>, app_content);
+	}
+);
+*/
+
+//serviceWorker.unregister();
