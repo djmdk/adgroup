@@ -1,4 +1,4 @@
-Zdecydowa³em siê napisaæ zadanie przy u¿yciu frameworka React poniwa¿ s³ysza³em, ze na nim pracujecie.
+ZdecydowaÅ‚em siÄ™ napisaÄ‡ zadanie przy uÅ¼yciu frameworka React poniwaÅ¼ sÅ‚yszaÅ‚em, ze na nim pracujecie.
 
-Oprócz Reacta, doda³em ob³sugê jQuery, zadanie bazodanowe realizuje plik PHP.
+OprÃ³cz Reacta, dodaÅ‚em obÅ‚sugÄ™ jQuery, zadanie bazodanowe realizuje plik PHP, dorzuciÅ‚em bootstrap bo tego sie czÄ™sto uÅ¼ywa.
 
